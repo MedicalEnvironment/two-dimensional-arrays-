@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> db(20);
+    int head = 0;
+    int size = 0;
+    int value;
+
+    while (std::cin >> value) {
+        if (value == -1) {
+            for (int i = 0; i < size; i++) {
+                int idx = (head - size + i + db.size()) % db.size();
+                std::cout << db[idx] << " ";
+            }
+            std::cout << std::endl;
+        } else {
+            db[head] = value;
+            head = (head + 1) % db.size();
+            if (size < db.size()) {
+                size++;
+            }
+        }
+    }
+
+    return 0;
+}

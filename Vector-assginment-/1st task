@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+    int n;
+    std::cout << "Size: ";
+    std::cin >> n;
+
+    std::vector<int> numbers(n);
+    std::cout << "Input numbers: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> numbers[i];
+    }
+
+    int x;
+    std::cout << "Input number to delete: ";
+    std::cin >> x;
+
+    std::vector<int> result;
+    for (int i = 0; i < n; ++i) {
+        if (numbers[i] != x) {
+            result.push_back(numbers[i]);
+        }
+    }
+
+    std::cout << "Result: ";
+    for (int i = 0; i < result.size(); ++i) {
+        std::cout << result[i] << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}

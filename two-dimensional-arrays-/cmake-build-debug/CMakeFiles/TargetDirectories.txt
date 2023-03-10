@@ -1,0 +1,3 @@
+/home/akbar/two-dimensional-arrays-/cmake-build-debug/CMakeFiles/two_dimensional_arrays_.dir
+/home/akbar/two-dimensional-arrays-/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/akbar/two-dimensional-arrays-/cmake-build-debug/CMakeFiles/rebuild_cache.dir

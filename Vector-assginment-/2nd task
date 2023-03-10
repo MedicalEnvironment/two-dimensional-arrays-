@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+    // Initialize vector of prices and vector of purchases
+    std::vector<float> prices = {2.5, 4.25, 3.0, 10.0};
+    std::vector<int> purchases = {1, 1, 0, 3};
+
+    // Calculate total cost of purchases
+    double total_cost = 21.0;
+    for (auto idx : purchases) {
+        total_cost += prices[idx];
+    }
+
+    // Print total cost to console
+    std::cout << "Total cost of purchases: $" << total_cost << std::endl;
+
+    return 0;
+}
